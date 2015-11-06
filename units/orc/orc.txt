@@ -1,0 +1,9 @@
+author: `Camilo Collao (Bo)`,`Natalya Bugrova`, `Aleksandr Zabylov (Shurga) d_shurga@mail.ru`
+copyright: `Nikita Sadkov`
+xy: 8,40
+frames: folder
+anims: | idle (idle0 60) (idle1 6) (idle2 6) (idle3 6) (idle2 6) (idle1 6)
+       | death (death1 6) (death2 6) (death3 6) (death4 24)
+       | move (move1 6) (move2 6) (move3 6) (move4 6)
+       | attack (attack1 6) (attack2 6) (attack3 6) (attack4 6) (attack5 6)
+       | hit (death1 24)

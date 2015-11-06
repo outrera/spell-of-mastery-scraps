@@ -1,0 +1,12 @@
+author: `Natalya Bugrova`,`Alex Kool (kharagh@bk.ru, http://kharagh.deviantart.com/)`, `James Biddulph`
+copyright: `Nikita Sadkov`
+xy: 5,44
+frames: folder
+anims: | idle (idle0 60) (idle1 6) (idle2 6) (idle3 6)
+              (idle4 20) (idle3 6) (idle2 6) (idle1 6)
+       | move (move1 6) (move2 6) (move3 6) (move4 6)
+       | death (death1 8) (death2 8) (death3 24)
+       | attack (attack1 6) (attack2 6) (attack3 6)
+                (attack4 9) (attack5 9) (attack6 9) 
+                (attack5 9) (attack2 6)
+       | hit (hit1 24)

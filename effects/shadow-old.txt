@@ -1,0 +1,5 @@
+author: `Seth A. Robinson`
+copyright: `Seth A. Robinson`
+license: `CC3-BY-SA`
+http: `http://www.rtsoft.com/pages/dink.php`
+frames: 37*15

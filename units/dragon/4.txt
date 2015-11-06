@@ -1,0 +1,10 @@
+author: `Ievgen Khomenko`, `Alex Kool (kharagh@bk.ru, http://kharagh.deviantart.com/)`, `Aleksandr Zabylov (Shurga) d_shurga@mail.ru`
+copyright: `Nikita Sadkov`
+xy: -8,32
+frames: folder
+anims: | idle (idle0 6) (idle1 6) (idle2 6) (idle3 6)
+              (idle4 6) (idle5 6)
+       | death (death1 6) (death2 6) (death3 6) (death4 6) (death5 12)
+       | attack (attack1 6) (attack2 6) (attack3 6) (attack4 6)
+                (attack5 6) (attack6 6)
+       | hit (hit1 20)

@@ -1,0 +1,11 @@
+author: `Carl Olsson 'surt'`,`Dmitrij Makovoz`,`Natalya Bugrova`, `Alex Kool (kharagh@bk.ru, http://kharagh.deviantart.com/)`
+copyright: `Carl Olsson 'surt'`,`Nikita Sadkov`
+origin: `http://opengameart.org/content/painted-iso-roguelike-tiles`
+xy: 0,48
+frames: folder
+anims: | idle (idle0 60) (idle1 12) (idle2 12) (idle3 12) (idle4 12)
+       | move (move1 6) (move2 6) (move3 6) (move4 6)
+       //| attack (attack1 6) (attack2 6) (attack3 6) (attack4 12)
+       | attack (spear1 6) (spear2 6) (spear3 6) (spear4 12)
+       | death (death1 6) (death2 6) (death3 6) (death4 24)
+       | hit (spear1 24)

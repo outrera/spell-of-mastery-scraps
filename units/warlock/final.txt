@@ -1,0 +1,12 @@
+author: Blarumyrran, `Nikita Sadkov`, `Sergey Abramov (InQvisions Company)`, `Aleksandr Zabylov (Shurga) d_shurga@mail.ru`
+copyright: Blarumyrran,`Nikita Sadkov`
+source: `http://opengameart.org/content/wizard-0`
+xy: 0,32
+frames: folder
+anims: | idle (idle0 9) (idle1 9) (idle2 9) (idle3 9)
+       | move (move1 6) (move2 6) (move3 6) (move4 6)
+       | attack (attack1 6) (attack2 6) (attack3 9)
+                (attack4 9) (attack5 9) (attack6 9)
+       | death (death1 6) (death2 6) (death3 6) (death4 6)
+               (death5 6) (death6 6) (death7 6) (death8 6)
+       | hit (hit1 24)

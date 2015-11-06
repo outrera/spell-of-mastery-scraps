@@ -1,0 +1,362 @@
+
+/*
+Octree Neighbor Discovery algorithm:
+ 1. on a given cube's side (square): push random sub-square onto stack
+ 2. pop top square, then add corresponding to it cube to Neighbors list and for each segment of each side of this square, push all corresponding neigbor square onto stack, if they are part of original cube's side
+ 3. if stack isnt empty, goto 2.
+ 4. return Neighbors list
+
+Note: hash poped quads by their XYZ
+
+Octree Neighbor Discovery algorithm:
+ 1. на данной стороне (квадрате) данного куба: добавить любой саб-квадрат наверх стека
+ 2. взять со стека топовый квадрат, внести соответстующий ему куб/воксель в список Neighbors и для каждого отрезка каждой стороны этого квадрата, добавить все лежащие на отрезках квадраты на стэк, при условие что квадраты так же являются частью стороны оригинального куба
+ 3. если стэк не пуст, перейти к пункту 2
+ 4. вернуть список Neighbors
+
+
+*/
+
+m:genOctNeibFn N V = \<R E = $V:(`,` E $N) = Q: Get E = Ns: o Q,1,phash:Q
+  = en:<Qs L F // edge neibs
+      = 0,<N = {N≥≥L = w r ø}
+             = Q: F N | Get = [S O:$\[$@(q X Y Z | cng N \_)] L]:Q = H:O,phash
+             = {hget H Ns; rectsIsect [$@(q X Y Z | del N) L L] R = hset H Q Ns = [Q@!Qs]}
+             = r N+Q,2>
+      = Qs>
+  = l Q | <[[S O:$\[$@(q X Y Z | cng N \_)] L]:Q @Qs]
+             $@(= [X Y]: q X Y Z | del N = q (`+`N `+`L) (`+`N `-`1) (`+`L `+`N) (`-`1 `+`N)
+                | m:[A B C D] \(= en !Qs L <N=[$@(ins N V [[A X B] [C Y D]])]>) | j)
+             = r Qs>
+  = Ns | m ?,1>
+
+octree D = T:0
+= Basis:[[1 0 0] [0 1 0] [0 0 1]]
+= phash:<[X Y Z]=Z*#10000+Y*#100+X>
+= p2i:<[X Y Z] = Z*4+Y*2+X> = merge:<[X:int?@(?|all:Y ptrEq X Y)]=X;R=R>
+= nh:<L F = xy 0 0 L L | m F | f ø <M X = hset X,1,phash X M> | m ?,1>
+= Get:<P = mod !P D
+         = with [0 0 0] D P T <:descend O L P T
+           = T,<S:int? = [S O L] //[Value Origin Dimension]
+               ;T = !L%2 = PD:P%L = I:PD,p2i = PM: mod P L = descend O+L*PD L PM T,I>
+         >>
+= xNs: genOctNeibFn 0 X = yNs: genOctNeibFn 1 Y = zNs: genOctNeibFn 2 Z
+= o get:Get
+    set:<P V = mod !P D
+             = !T: merge :: with D P T <:descend L P T = !L%2
+               = T,<S:int? = {ptrEq L 0 |v ptrEq V S = V; vec 8 I:S | r}
+                   ;T = I: p2i P%L = P: mod P L
+                      = R: descend L P T,I = aset I R,merge T = T>
+               >
+             = ø>
+    neibs:<P = C:P,get = [S O L]:C = [X Y Z]:O
+             = West: xNs [Y Z L L] [X-1 Y Z] = East: xNs [Y Z L L] [X+L Y Z]
+             = North: yNs [X Z L L] [X Y-1 Z] = South: yNs [Y Z L L] [X Y+L Z]
+             = Down: zNs [X Y L L] [X Y Z-1] = Up: zNs [X Y L L] [X Y Z+L]
+             = l @West @East @North @South @Down @Up>
+    neibs_old:<P = C:P,get = [S O L]:C = [X Y Z]:O
+      = West: nh L <[A B] = get [X-1 Y+A Z+B]> = East: nh L <[A B] = get [X+L Y+A Z+B]>
+      = North: nh L <[A B] = get [X+A Y-1 Z+B]> = South: nh L <[A B] = get [X+A Y+L Z+B]>
+      = Down: nh L <[A B] = get [X+A Y+B Z-1]> = Up: nh L <[A B] = get [X+A Y+B Z+L]>
+      = l @West @East @North @South @Down @Up>
+    pilar:<P = with ø 0 <R (D) = R
+                        ;R Z = [S O L]:[@P Z],get = r [@R [L S]] Z+L>
+             | <[@H [A V] [B V] @T] = [@H @[[A+B V] @T],r]
+               ;X = X>>
+    data:<=T>
+
+//octree 16 | <T = T.set [2 0 0] 7 = T.set [2 0 0] 0 = T.get [2 0 0] | p = T'data | p>
+//octree 16 | <T = T.set [7 7 7] 123 = T.neibs [7 7 8] | p = T.neibs_old [7 7 8] | p>
+//octree 16 | <T = T.set [7 7 7] 123 = T.pilar [7 7] | p>
+//abort,c
+
+
+Data = “symwars/data”
+Sounds = “$Data/sounds”
+DataFull = “$(pwd,c)/$Data”
+
+Timers = 
+setSkin “$Data/ui”
+
+
+DummyGfx = gfx 1 1
+Cursor = gfxLoad “$Data/misc/cursor.png”
+RectBack = gfxLoad “$Data/misc/rect_back.png”
+RectFront = gfxLoad “$Data/misc/rect_front.png”
+
+Dirs = rng 8 | m (?-2)*PI/4 | m:A round [A,cos A,sin]
+Dirs4 = l [0 ~1] [1 0] [0 1] [~1 0]
+
+Cycle = 0
+
+EditorTypes = ø
+
+loadTypes What Dir = S:ø = DefAni: o still:[[4 0 0]]
+= R: k y :: ls Dir | m ?,pne,1 | k y | uniq | m:N with N “$Dir/$N” ø <:loop N P O
+    = {O; !O:cfg “$P.txt” | m:[[_ K X]@Xs] [K {Xs=X,<\q=Xs;_=[X@Xs]>;X}] | sort by:lhd}
+    = {O.editor; !O.editor:N}
+    = {dir? P = K: ls P | sort | m pne | m:[P N E] loop “$(P,rhd)$N” [P N ø],unpne O = l@!S @K = w loop ø}
+    = !O.gfxes: v [DummyGfx] {F:“$P.png”,file? = G:F,gfxLoad = O.gfxes |v [[0 0 G'w G'h]] | m:[X Y W H] G.cut X Y W H}
+    = Ani:ø = !O | k <[[@“ani_” @A] V] = !Ani.A:V = ø; X=√> = {Ani = !O.ani:Ani}
+    = What,<\obj = l@!EditorTypes.(O.editor) N>
+    = Default: o height:2 type:N ani:DefAni disp:[0 0]
+    = l N :: o Default O
+    >
+= o R S
+
+
+Acts = loadTypes \act “$Data/act/”
+ObjTypes = loadTypes \obj “$Data/obj/”
+UnitTypes = loadTypes \unit “$Data/units/”
+Types = o ObjTypes UnitTypes
+
+
+transparentize Base A = R:Base'copy = D:R.put
+= xy 0 0 64 64 | e:[X Y] {ptrEq (and X 1) (and Y 1) = D X Y 255}
+= R
+
+yoba X Y = [[32 0] [64 16] [32 32]] | m:P abs P-[X Y] | avg | flt
+
+genTransition M F T = R:T'copy = P:R.put = G:F.get = MG:M.get
+= xy 0 0 64 32 | e:[X Y] {ptrEq (MG X Y) 255|n = P X Y (G X Y)}
+= R
+
+
+AuxTiles =
+
+Tiles
+= G: “$Data/til/gfx.png”,gfxLoad = R:ø
+= cutTile:<N = G.cut (mod N 20)*64 N%20*64 64 64>
+= cfg “$Data/til/map.txt” | e <[N C @Is] = [Is As]: div <[“:” _ _]> Is
+  = !C | digits 10 | pad 4 0
+  = {Is; error “one of $N tiles misses gfxes”}
+  = Gs: Is,<[\stack @Is]=!R.N.stack:Is=ø; _=m cutTile Is>
+  = As | m ltl | e 
+    <[\a V] = !Gs | m:G transparentize G V
+    ;[\aux V] = !AuxTiles.N:V
+    ;[K V] = !R.N.K:V>
+  = {Gs = !R.N.tiles.C:Gs}>
+= Trns:R.trns.tiles = Base:R.base.tiles.[1 1 1 1],0
+= !R | m <[K V] = Role:{V.role;K} = Trn:V.trn = NoTrn:Trn,n = Empty:V.empty
+  = NEs:ø // neighbouring elevations
+  = Tid:V.tid
+  = Elev:{V.elev;1} = Lineup:V.no_lineup,n
+  = Tiler:V.tiling,<\side=<=getSideElev>;_=<=getCornerElev>>
+  = [Ds Ms Us]:{T:V.tiles=[T T T]; m R.?.tiles V.stack}
+  = V: o _prn:<=“tile \\$K”> type:<=K> role:<=Role> elev:<=Elev> trn:<=Trn> empty:<=Empty> heavy:<=Empty,n>
+    order:<A=ø> tid:<=Tid>
+    slope:<=NEs,<ø=0; [1 1 1 1]=0; [0 0 0 0]=0; _=16>>
+    render:V.gen,<ø = <:render P Z D U S
+                        = DE:D'empty = DR:D'role
+                        = UH:U'heavy = UR:U'role = UPad:UR≥≤\pad
+                        = Gs:{DR≤≥Role = Ds
+                             ;UR≤≥Role |a UPad,n = Us
+                             ;Ms}
+                        = G:{Lineup |a {UH; UPad; UR≥≤Role} = !NEs:[1 1 1 1] = Gs.NEs
+                            ;√ = !NEs: Tiler,c P Z | m:E {E≤Elev = 0; 1}
+                               = {Gs.NEs; √ = !NEs:[1 1 1 1] = Gs.NEs}}
+                        = G:G,(mod S G,len)
+                        = {NoTrn |v NEs≤≥[1 1 1 1] = w render G}
+                        = Rs: getCornerTrns P Z Role
+                        = {all 1 Rs = w render G}
+                        = !G: genTransition Trns.Rs,0 G Base
+                        = G>
+                 ;\none = <P Z D U S = DummyGfx>
+                 ;T = error “can't generate $T”>
+  = l K V>
+= R | o
+
+Tids = R: vec 1024 = Tiles | e:[K T] {I:T'tid = aset I T R} = R
+
+
+TileW = 64
+TileH = 32
+
+world D = Filler:Tiles.base'tid //= OT:D,octree = octSet:OT.set = octGet:OT.get
+= !p2i:<[X Y] = mod !X D = mod !Y D = Y*D+X>
+= Map:D,octree = Gfxes:xy 0 0 D D | m:_ ø
+= !mapGet:Map.get = mapSet:Map.set = !mapNeibs:Map.neibs
+= xy 0 0 D D | m:P mapSet [@P 0] Filler
+= DD:D*D = Seed: xy 0 0 D D | m:P rand DD | vectorize
+= getElev:<P Z = Tids,([@P Z],mapGet,0)'elev>
+= getTrn:<P Z = C:Tids,([@P Z],mapGet,0) = C'trn |a C'role>
+= !getCornerElev:<P Z
+  = l (minBy y ::l (getElev P+[~1 ~1] Z) (getElev P+[0 ~1] Z) (getElev P+[~1 0] Z))
+      (minBy y ::l (getElev P+[ 1 ~1] Z) (getElev P+[0 ~1] Z) (getElev P+[ 1 0] Z))
+      (minBy y ::l (getElev P+[ 1  1] Z) (getElev P+[0  1] Z) (getElev P+[ 1 0] Z))
+      (minBy y ::l (getElev P+[~1  1] Z) (getElev P+[0  1] Z) (getElev P+[~1 0] Z))>
+= !getSideElev:<P Z = l (getElev P+[0 ~1] Z) (getElev P+[1 0] Z) (getElev P+[0 1] Z) (getElev P+[~1 0] Z)>
+= !getCornerTrns:<P Z R
+  = l (all <(R);ø> ::l (getTrn P+[~1 ~1] Z) (getTrn P+[0 ~1] Z) (getTrn P+[~1 0] Z))
+      (all <(R);ø> ::l (getTrn P+[ 1 ~1] Z) (getTrn P+[0 ~1] Z) (getTrn P+[ 1 0] Z))
+      (all <(R);ø> ::l (getTrn P+[ 1  1] Z) (getTrn P+[0  1] Z) (getTrn P+[ 1 0] Z))
+      (all <(R);ø> ::l (getTrn P+[~1  1] Z) (getTrn P+[0  1] Z) (getTrn P+[~1 0] Z))
+  | m <ø=0;_=1>>
+= getPilar:Map.pilar
+= updPilarGfxes:<P = I:P,p2i = S:aget I Seed = Cs:P,getPilar = Gs:ø = Z:0 = B:Tids,0
+  = Cs|e<[N V] = {V≥≤0 = !B:Tids,0 = !Z+N = l@!Gs N = w r ø}
+               = C:Tids,V
+               = times I:N (
+                 = A:{I+1≤N = B; Tids,([@P Z+1],mapGet,0)}
+                 // B=Below, A=Above, S=Seed
+                 = l@!Gs (C.render P Z B A S)
+                 = !B:C
+                 = !Z+1
+                 )
+               >
+  = aset I Gs Gfxes>
+= !drawPilar:<P BX BY B CI = mod !P Dim = I:P,p2i = Gs:aget I Gfxes = C:ptrEq I CI = Z:0 = Os:P,<[X Y]=Objs.X.Y>
+  = Gs|e <G:int? = !Z+G
+         ;G = {C = B BX BY-RectBack'h+32-Z*32 RectBack}
+            = B BX BY-G'h+32-Z*32 G
+            = Os.(Z+1) | e:O O.render B BX BY-Z*32
+            = {C = B BX BY-RectFront'h+32-Z*32 RectFront}
+            = !Z+1>
+  //= {C = B BX BY-Cursor'h+32-E*32 Cursor}
+  >
+= updElev:<P = Dirs | m:D updPilarGfxes P+D = updPilarGfxes P>
+= O: o dim:<=D>
+  height:<XY = Cs:XY,getPilar = Z:D-Cs,rhd,0>
+  push:<XY C = mapSet [@XY XY,height] C'tid = updElev XY>
+  pop:<XY = {H:XY,height,pos? = mapSet [@XY H-1] 0 = updElev XY}>
+= xy 0 0 D D | m:P updPilarGfxes P
+= O
+
+Dim = 16
+World = world Dim
+Objs = ø
+Sel = ø
+
+DirToAnim = u [0 0]:[0 ø] [0 ~1]:[1 √] [1 ~1]:[1 √] [1 0]:[0 √] [1 1]:[0 √]
+              [0 1]:[0 ø] [~1 1]:[0 ø] [~1 0]:[1 ø] [~1 ~1]:[1 √]
+
+
+
+//L=limit, S=entry_point, F=search_target  H=heuristic M=can_move_to? N=gets_neibs_points
+aStar L S F H M N = Vs:ø /*visited cells*/ = u 0:[S ø 0] |
+  <:next [[_ O]@Os] = C:O,0 = G:O,2
+     = {F C = O,<[N P:y @_]=[@P,r N]> // backtrace path
+       ;√ = {G≤L = NG:G+1 = N C | k M | s Vs.? | e <N = hins NG+(H N) [N O NG] !Os = !Vs.N:√>}
+          = next Os}>
+
+findPath E T = [TS [TX TY TZ] TL]:T,mapGet
+= aStar 1024
+        E
+        <[X Y Z] = inRng TX TX+TL X |a inRng TY TY+TL Y |a inRng TZ TZ+TL Z>
+        <P = T-P | m abs | sum>
+        <P = P,mapGet,0 ≤ 100>
+        <P = P,mapNeibs | m ?,1>
+
+obj N SP Z:{ø} = T:{Types.N; error “obj: cant find $N”} = H:T.height = G:DummyGfx
+= [DX DY]: T.disp = FlipX:ø = DI:0 = Slope:DY = !DX+32 = Empty:T.empty
+= Anim:ø = Act:Acts.still = P:ø = Bs:ø = BG:ø = Hits:T.hp
+= O: o _prn:<=“obj \\$N [$P] Z:$Z”>
+  selectable?:<=Hits,pos?>
+  role:<=N> slope:<=0> trn:<=ø> empty:<=Empty> heavy:<=ø>
+  lookAt:<D = DirToAnim.(sign D-P),<[I F] = !DI:I = !FlipX:F>>
+  upd:<= Act.type,<\still =
+                  ;\move = [DXY DZ]:Act.dst
+                         = findPath [@P Z] [@DXY DZ] | p
+                         = order Acts.still
+                         /*= F:{Act.flood; √ = F:World'newFlood = o !Act flood:F = F}
+                         = {NP: F.next P
+                            //= p [P NP XY]
+                            = lookAt NP
+                            = move NP Z
+                            = {P,p2i≥≤XY,p2i = order Acts.still}
+                            }*/>
+       = !Anim | <[[W@Ds]@As] = !G:T.gfxes,(Ds,DI) = sched W upd = As
+                 ;ø = r {T.ani.(Act.show); T.ani.still; error “no still anim for $O”}
+                 ;[\attack @As] = r As>
+       = >
+  render:<B X Y = //!Slope:BelowCell'slope+DY
+                = B X+DX-G'w%2 Y-16-G'h+Slope G FX:FlipX>
+  s_flipped:<V=!FlipX:V>
+  flipped:<=FlipX>
+  order:<O=!Act:O>
+  height:<=Z>
+  move:<:move NP NZ = mod !NP Dim = NZ:{NZ; NP = World.height NP}
+    = P,<[X Y] = s (ptrEq ? Me) !Objs.X.Y.Z
+        ;_ = sched 0 upd>
+    = !P:NP = P,<ø = w move ø> //remove
+    = !Z:NZ = P,<[X Y] = l@!Objs.X.Y.Z Me>
+    >
+= O.move SP Z
+= {O'selectable? = l@!Sel O}
+= O
+
+
+Scheds =
+sched T F = l@!Scheds.(Cycle+T) F
+
+updObjs
+= while S:Scheds.Cycle (= ~@!Scheds.Cycle = e c S)
+= !Cycle+1
+
+//VO: View Origin
+//BO: Blit Origin
+//CXY: XY of cell under cursor
+//CI: index of cell under cursor
+//A: mice anchor
+//LA: lmb anchor
+//MZ: mice Z
+viewport W H = Paused:ø = A:ø = LA:ø = M:[0 0] = MZ:0 = CXY:[0 0] = CI:0 = BO:[360 ~170] = VO:[0 0] = G: gfx W H C:3
+             = Brush:[\tile \base] = Visibles:ø = Notes:ø = Speed:1 = MX:0 = MY:0 = LKs:ø = o
+  notify:<P Text Life:{6} = l @!Notes [time,c+Life Text]>
+  init:<= !Paused:ø = !Notes:ø = !Visibles:ø>
+  w:<=W> h:<=H>
+  render:<= G.clear C:#929292/*#00A0C0*/ = B:G.blit = D:32 = [TX TY]:BO = Y:0 = YY:D
+    = for (; Y≤D; !Y+1) times N:Y+1
+      (= BX:TX-Y*TileH + N*TileW = BY:TY+Y*TileH%2
+       = drawPilar [N Y-N]+VO BX BY B CI)
+    = for (; YY≥0; !Y+1) times N:!YY-1
+      (= BX:TX-(YY-1)*TileH + N*TileW = BY:TY+Y*TileH%2
+       = drawPilar [D-YY+N D-N-1]+VO BX BY B CI)
+    = G>
+  mapToView:<P=[X Y]:P-VO=[X*TileW-Y*TileW X*TileH-Y*TileH]%2+BO>
+  viewToMap:<P=[X Y]:P-BO=!X-32= mod [Y*TileW+X*TileH Y*TileW-X*TileH]%(TileW*TileH)+VO Dim>
+  order:<A XY Z = A:o Acts.A dst:[XY Z] = Sel |e:U U.order A>
+  update:<= Ks:GUI'keys = key:<X = Ks.X |a LKs.X,n> = Z:World.height CXY = Us:CXY,<[X Y]=Objs.X.Y.Z>
+          //= q (left ~1 0) (right 1 0) (up 0 ~1) (down 0 1) | filter:[N@P] {Ks.N=P} | f !VO `+`
+          = q (left ~1 1) (right 1 ~1) (up ~1 ~1) (down 1 1) | filter:[N@P] {Ks.N=P,sign} | f !VO `+`
+          = {key\m = order\move CXY Z}
+          = {key\l = Sel |e:U U.lookAt CXY}
+          = !LKs:Ks
+          //= !MX+Speed = !MY+Speed
+          //= {GUI'keys.delete = rmXY M,screenToCell}
+          //= {Music'playing?; !Music: sideMusic,c | snd Music:√}
+          = {A,n =
+            ;[\obj Type]: Brush = {Us,n = O:obj EditorTypes.Type,pick CXY = O.s_flipped GUI'keys.lctrl}
+            ;[\unit Type]: Brush = {Us,n = O:obj Type CXY}
+            ;Z≥≥MZ =
+            ;[\tile Type]: Brush = World.push CXY Tiles.Type
+            }
+          = {LA,n; Z≤≤MZ
+            ;Brush,0,<\unit;\obj> = Us|e:U U.move ø ø
+            ;Brush,0,<\tile> = World.pop CXY}
+          = dup Speed updObjs,c = k ?'selectable? !Sel
+          = √>
+  pause:<=!Paused:√> unpause:<=!Paused:ø> paused?:<=Paused>
+  s_brush:<NB=!Brush:NB>
+  input:
+  <[\mice_move _ P] = !P+[0 32] = !M:P = !CXY:P,viewToMap = !CI:CXY,p2i
+  ;[\mice_left y XY] = !A:XY = !MZ:(World.height CXY)+1
+  ;[\mice_left ø XY] = !A:ø
+  ;[\mice_right y XY] = !LA:XY = !MZ:(World.height CXY)-1
+  ;[\mice_right ø XY] = !LA:ø
+  >
+
+VP = R:viewport 600 600-2 = timer 1/12 <={R'paused?,n=R'update}=√> = R
+Panel = ObjList: list L:31 W:160 F:<N=VP.s_brush [\obj N]> :: m ?,0 EditorTypes
+      = TileList: list L:31 W:160 F:<N=VP.s_brush [\tile N]> :: Tiles | s AuxTiles.(?,1'type) | m ?,0
+      = UnitList: list L:31 W:160 F:<N=VP.s_brush [\unit N]> :: m ?,0 UnitTypes 
+      = Tabs: tabs \tile :: u tile:TileList obj:ObjList unit:UnitList
+      = Labels2: box\h :: l (button W:\medium H:\small “Unit” <=VP.s_brush [\unit UnitList'value]=Tabs.s_tab\unit>)
+                            (button W:\medium H:\small “ToDo” S:{\disabled} <>)
+      = Labels: box\h :: l (button W:\medium H:\small “Tile” <=VP.s_brush [\tile TileList'value]=Tabs.s_tab\tile>)
+                           (button W:\medium H:\small “Obj” <=VP.s_brush [\obj ObjList'value]=Tabs.s_tab\obj>)
+      = VP.s_brush [\tile \base]
+      = box\v :: l Labels Labels2 Tabs
+
+
+main N = {N = game N} = gui (box\h :: l Panel VP)

@@ -1,0 +1,8 @@
+author: `Denzi`, `Crossmagi Team`, `Nikita Sadkov`
+license: `GPL2`
+origin: `http://crossmagi.sourceforge.net/`
+height: 4
+xy: -2,16
+frames: folder
+anims: | idle (idle0 9) (idle1 9) (idle2 9) (idle3 9)
+       | attack (attack1 9) (attack2 18) (attack1 9)

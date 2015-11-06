@@ -1,0 +1,8 @@
+author: `Wesnoth Team`
+license: `GPL2`
+origin: `wesnoth.org`
+xy: 0,16
+height: 4
+frames: folder
+anims: | idle (idle0 6) (idle1 6) (idle2 6) (idle3 6) (idle4 6) (idle2 6)
+       | death (death1 6) (death2 6) (death3 6) (death4 6)

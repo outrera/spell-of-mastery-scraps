@@ -1,0 +1,9 @@
+author: `Thomas Frose`, `Alexander Luchkin`,`Alex Kool (kharagh@bk.ru, http://kharagh.deviantart.com/)`
+copyright: `Nikita Sadkov`
+xy: 0,38
+frames: folder
+anims: | idle (idle0 9) (idle1 9) (idle2 9) (idle3 9)
+       | move (move1 6) (move2 6) (move3 6) (move4 6) (move5 6)
+       | death (death1 8) (death2 8) (death3 24)
+       | attack (attack1 6) (attack2 12) (attack3 12) (attack4 6)
+       | hit (hit1 24)

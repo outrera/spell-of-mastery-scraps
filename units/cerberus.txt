@@ -1,0 +1,7 @@
+author: `Thomas Frose`
+xy: 4,8
+frames: folder
+anims: | idle (idle0 6) (idle1 6) (idle2 6) (idle3 6)
+              (idle4 6) (idle5 6) (idle6 6) (idle7 6)
+
+

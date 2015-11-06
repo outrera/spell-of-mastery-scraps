@@ -1,0 +1,5 @@
+Animations frame really finished:
+walking north, walking south, death.
+
+not finished:
+attacking north, attacking south.

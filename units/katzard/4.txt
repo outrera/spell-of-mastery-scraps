@@ -1,0 +1,12 @@
+author: `Aleksandr Zabylov (Shurga) d_shurga@mail.ru`
+copyright: `Nikita Sadkov`
+xy: 5,32
+frames: folder
+anims: | idle (idle1 9) (idle2 9) (idle3 9) (idle4 9)
+       | move (move1 6) (move2 6) (move3 6) (move4 6)
+       | death (death1 6) (death2 6) (death3 6)
+               (death4 6) (death5 6) (death6 6)
+               (death7 6) (death8 6) (death9 6)
+       | attack (attack1 6) (attack2 6) (attack3 6)
+                (attack4 6) (attack5 6) (attack6 6)
+       | hit (hit1 24)

@@ -1,0 +1,3 @@
+author: `Nethack Team`
+license: GPL2
+xy: 0,14
