@@ -1,0 +1,5 @@
+lib/
+*.dSYM
+run
+work/
+.DS_Store
