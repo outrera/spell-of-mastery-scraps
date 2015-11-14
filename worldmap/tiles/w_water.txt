@@ -1,0 +1,8 @@
+sprite: world_tiles
+height: 2
+empty: 1
+filler: 0
+no_lineup: 1
+//alpha: 127
+
+1111: 19
