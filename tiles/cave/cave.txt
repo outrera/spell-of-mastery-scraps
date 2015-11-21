@@ -1,0 +1,2 @@
+author: `Natalya Bugrova`
+frames: 64*64
