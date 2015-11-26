@@ -1,0 +1,10 @@
+author: `Nikita Sadkov`, `Camilo Collao (Bo)`,`Alex Kool (kharagh@bk.ru, http://kharagh.deviantart.com/)`
+copyright: `Nikita Sadkov`
+license: `CC3-BY-SA`
+xy: 0,48
+frames: folder
+anims: | idle (idle0 24)
+       | move (move1 6) (move2 6) (move3 6) (move4 6)
+       | death (death1 8) (death2 8) (death3 8) (death4 8) (death5 24)
+       | attack (attack1 6) (attack2 6) (attack3 6) (attack4 15) (attack2 6)
+       | hit (hit1 24)
