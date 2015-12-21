@@ -1,0 +1,3 @@
+author: `Jerom`,`slainte`,`PriorBlue`,`Nikita Sadkov`
+license: `CC3-BY-SA`
+origin: `http://opengameart.org/content/assorted-weapons`,`http://opengameart.org/content/recolor-all-the-items`
