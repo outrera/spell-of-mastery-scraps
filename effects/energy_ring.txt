@@ -1,0 +1,5 @@
+author: `Blasphemer Team (https://code.google.com/archive/p/blasphemer/)`
+license: `BSD`
+frames: 53*54
+xy: 0,8
+anims: | idle time-6 0  1  2  3  4  5

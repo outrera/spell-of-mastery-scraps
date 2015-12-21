@@ -1,0 +1,6 @@
+author: `Marc Russell`
+copyright: `Marc Russell`
+license: `CC-BY-SA`
+origin: `www.spicypixel.net`
+frames: 32*32
+anims: | idle time-3 0  1  2  3  4  5  6  7  8  9 10 11

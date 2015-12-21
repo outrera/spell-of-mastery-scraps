@@ -1,0 +1,10 @@
+author: `Daniel Cook`
+copyright: `Daniel Cook`
+license: `CC3-BY`
+origin: `http://lunar.lostgarden.com/labels/free%20game%20graphics.html`
+xy: 0,2
+frames: folder
+anims: | idle (idle01 3) (idle02 3) (idle03 3) (idle04 3)
+              (idle05 3) (idle06 3) (idle07 3) (idle08 3)
+              (idle09 3) (idle10 3) (idle11 3) (idle13 3)
+              (idle14 3) (idle15 3) (idle16 3) (idle17 3)
