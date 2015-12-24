@@ -1,0 +1,4 @@
+author: `superjoe (Andrew Kelley)`
+copyright: `superjoe (Andrew Kelley)`
+license: `Public Domain`
+origin: `http://opengameart.org/content/electrical-disintegration-animation`

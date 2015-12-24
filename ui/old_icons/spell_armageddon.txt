@@ -1,0 +1,2 @@
+author: `AngryMeteor.com`
+origin: `http://opengameart.org/content/141-military-icons-set`
