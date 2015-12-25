@@ -1,0 +1,3 @@
+author: `BlackMoon Design`
+license: `Public Domain`
+source: `http://opengameart.org/content/big-space-gun-free-pixel-art-graphics-for-your-game-0`
