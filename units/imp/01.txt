@@ -1,0 +1,9 @@
+author: `Wesley D. Johnson (johnson2412@usgo.net)`
+origin: `https://freedoom.github.io/`
+xy: 0,32
+frames: folder
+anims: | idle (idle0 6)
+       | move (move1 5) (move2 5) (move3 5) (move4 5)
+       | attack (attack1 12) (attack2 12)
+       | death (death1 4) (death2 4) (death3 4) (death4 4)
+       | hit (death1 4)
