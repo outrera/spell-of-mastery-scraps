@@ -1,0 +1,11 @@
+author: `Carl Olsson 'surt'`,`Dmitrij Makovoz`,`Natalya Bugrova`, `Alex Kool (kharagh@bk.ru, http://kharagh.deviantart.com/)`
+copyright: `Carl Olsson 'surt'`,`Nikita Sadkov`
+origin: `http://opengameart.org/content/painted-iso-roguelike-tiles`
+//frames: folder
+//xy: 0,32
+frames: list,((`3-idle0+-9+3` (10 10 64 63)) (`3-idle1+-2+0` (10 106 69 61)) (`3-idle2+-7+0` (10 202 36 72)) (`3-idle3+-2+2` (10 298 30 70)) (`3-idle4+-5+1` (10 394 27 74)) (`6-idle0+3+2` (106 10 63 61)) (`6-idle1+-2+0` (106 106 69 60)) (`6-idle2+1+1` (106 202 35 71)) (`6-idle3+-2+-1` (106 298 30 66)) (`6-idle4+-2+0` (106 394 26 72)) (`3-move1+10+0` (202 10 64 57)) (`3-move2+1+-3` (202 106 66 59)) (`3-move3+-2+13` (202 202 58 70)) (`3-move4+-3+0` (202 298 62 61)) (`6-move1+-11+3` (298 10 54 57)) (`6-move2+4+6` (298 106 57 61)) (`6-move3+6+11` (298 202 69 65)) (`6-move4+0+1` (298 298 56 57)) (`3-attack1+-9+1` (394 10 71 65)) (`3-attack2+-16+1` (394 106 56 72)) (`3-attack3+11+1` (394 202 69 58)) (`3-attack4+7+1` (394 298 50 55)) (`6-attack1+22+2` (490 10 65 63)) (`6-attack2+20+2` (490 106 57 69)) (`6-attack3+14+-8` (490 202 63 72)) (`6-attack4+-10+-8` (490 298 47 54)) (`3-death1+2+0` (586 10 63 60)) (`3-death2+-2+0` (586 106 67 63)) (`3-death3+-8+7` (586 202 62 59)) (`3-death4+-16+11` (586 298 69 37)) (`6-death1+-1+2` (682 10 63 60)))
+anims: | idle (idle0 60) (idle1 12) (idle2 12) (idle3 12) (idle4 12)
+       | move (move1 6) (move2 6) (move3 6) (move4 6)
+       | attack (attack1 6) (attack2 6) (attack3 6) (attack4 12)
+       | death (death1 6) (death2 6) (death3 6) (death4 24)
+       | hit (death1 24)

@@ -1,0 +1,11 @@
+author: `Tap (Josh Maines)`,`Nikita Sadkov`,`Alex Kool (kharagh@bk.ru, http://kharagh.deviantart.com/)`
+copyright: `Nikita Sadkov`
+origin: `http://opengameart.org/content/multi-part-sprites-and-other-objects`
+height: 4
+frames: list,((`3-idle0+1+5` (10 10 43 33)) (`3-idle1+2+5` (10 138 46 32)) (`3-idle2+1+5` (10 266 43 33)) (`3-idle3+1+5` (10 394 42 34)) (`6-idle0+-2+9` (138 10 45 38)) (`6-idle1+-2+9` (138 138 47 38)) (`6-idle2+-2+9` (138 266 45 38)) (`6-idle3+-2+9` (138 394 45 38)) (`3-move1+3+7` (266 10 47 36)) (`3-move2+2+8` (266 138 52 37)) (`3-move3+-1+7` (266 266 48 36)) (`3-move4+1+6` (266 394 50 35)) (`6-move1+-1+8` (394 10 44 37)) (`6-move2+-1+8` (394 138 39 37)) (`6-move3+0+7` (394 266 38 36)) (`6-move4+-2+6` (394 394 39 35)) (`3-attack1+1+5` (522 10 43 37)) (`3-attack2+1+5` (522 138 43 40)) (`3-attack3+12+9` (522 266 64 39)) (`3-attack4+12+12` (522 394 65 42)) (`3-attack5+12+13` (522 522 65 43)) (`3-attack6+12+18` (522 650 65 47)) (`6-attack1+-2+9` (650 10 45 41)) (`6-attack2+-2+9` (650 138 45 44)) (`6-attack3+-12+9` (650 266 66 52)) (`6-attack4+-13+9` (650 394 67 52)) (`6-attack5+-12+9` (650 522 66 58)) (`6-attack6+-13+9` (650 650 67 63)) (`3-death1+1+5` (778 10 43 31)) (`3-death2+1+16` (778 138 69 34)) (`3-death3+1+25` (778 266 89 45)) (`3-hit1+2+15` (1034 10 62 35)))
+anims: | idle (idle0 9) (idle1 9) (idle2 9) (idle3 9)
+       | move (move1 6) (move2 6) (move3 6) (move4 6)
+       | attack (attack1 6) (attack2 6) (impact 0)
+                (attack3 6) (attack4 6) (attack5 6) (attack6 6)
+       | death (death1 8) (death2 8) (death3 24)
+       | hit (hit1 24)

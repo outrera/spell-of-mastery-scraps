@@ -1,0 +1,8 @@
+author: `Wesnoth Team`
+license: `GPL2`
+origin: `wesnoth.org`
+height: 4
+frames: list,((`3-idle0+-9+-11` (10 10 31 37)) (`3-idle1+-5+-11` (10 138 41 30)) (`3-idle2+0+-11` (10 266 36 28)) (`3-idle3+-2+-4` (10 394 33 35)) (`3-idle4+-1+0` (10 522 22 41)) (`6-idle0+-1+-8` (138 10 37 42)) (`6-idle1+0+-10` (138 138 50 34)) (`6-idle2+2+-11` (138 266 36 27)) (`6-idle3+1+-5` (138 394 29 35)) (`6-idle4+2+-4` (138 522 20 36)) (`3-death1+-4+-11` (266 10 50 34)) (`3-death2+-8+-12` (266 138 39 41)) (`3-death3+-1+-2` (266 266 21 45)) (`3-death4+3+4` (266 394 31 47)))
+anims: | idle (idle0 6) (idle1 6) (idle2 6) (idle3 6) (idle4 6) (idle2 6)
+       | attack (idle0 6) (idle1 6) (idle2 6) (idle3 6) (idle4 6) (idle2 6)
+       | death (death1 6) (death2 6) (death3 6) (death4 6)
