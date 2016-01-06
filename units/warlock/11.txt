@@ -1,0 +1,12 @@
+author: `Nikita Sadkov`, `Sergey Abramov (InQvisions Company)`, `Aleksandr Zabylov (Shurga) d_shurga@mail.ru`
+copyright: `Nikita Sadkov`
+//xy: 0,32
+//frames: folder
+frames: list,((`3-idle0+1+4` (10 10 43 82)) (`3-idle1+1+4` (10 120 44 82)) (`3-idle2+1+4` (10 230 44 82)) (`3-idle3+1+4` (10 340 44 82)) (`6-idle0+-5+6` (120 10 40 79)) (`6-idle1+-6+6` (120 120 39 79)) (`6-idle2+-6+5` (120 230 38 78)) (`6-idle3+-6+4` (120 340 39 77)) (`3-move1+1+7` (230 10 51 74)) (`3-move2+3+5` (230 120 39 78)) (`3-move3+6+6` (230 230 41 74)) (`3-move4+1+5` (230 340 39 80)) (`6-move1+-6+8` (340 10 45 81)) (`6-move2+-4+4` (340 120 36 75)) (`6-move3+-6+8` (340 230 41 72)) (`6-move4+-5+4` (340 340 35 78)) (`3-attack1+1+2` (450 10 55 81)) (`3-attack2+0+0` (450 120 57 85)) (`3-attack3+-3+2` (450 230 40 97)) (`3-attack4+-3+1` (450 340 34 97)) (`3-attack5+-2+10` (450 450 48 71)) (`3-attack6+2+10` (450 560 60 75)) (`6-attack1+-8+1` (560 10 52 77)) (`6-attack2+-7+0` (560 120 54 77)) (`6-attack3+-3+1` (560 230 38 91)) (`6-attack4+-5+1` (560 340 37 93)) (`6-attack5+-10+6` (560 450 49 78)) (`6-attack6+-13+6` (560 560 57 79)) (`3-death1+3+-2` (670 10 62 71)) (`3-death2+11+-3` (670 120 72 63)) (`3-death3+10+-2` (670 230 72 72)) (`3-death4+5+-4` (670 340 81 77)) (`3-death5+3+1` (670 450 83 83)) (`3-death6+5+1` (670 560 80 90)) (`3-death7+2+7` (670 670 86 101)) (`3-death8+2+7` (670 780 86 33)) (`3-hit1+-4+4` (890 10 63 71)) (`6-hit1+-2+7` (1000 10 74 75)))
+anims: | idle (idle0 6) (idle1 6) (idle2 6) (idle3 6)
+       | move (move1 6) (move2 6) (move3 6) (move4 6)
+       | attack (attack1 3) (attack2 3) (attack3 5) (impact 0)
+                (attack4 5) (attack5 5) (attack6 5)
+       | death (death1 4) (death2 4) (death3 4) (death4 4)
+               (death5 4) (death6 4) (death7 4) (death8 4)
+       | hit (hit1 24)
