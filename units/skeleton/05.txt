@@ -1,0 +1,8 @@
+author: `Nikita Sadkov`, `Sergey Abramov (InQvisions Company)`, `Aleksandr Zabylov (Shurga) d_shurga@mail.ru`
+copyright: `Nikita Sadkov`
+frames: list,((`3-idle0+10+3` (10 10 45 66)) (`6-idle0+1+4` (90 10 37 62)) (`3-move1+5+4` (170 10 58 65)) (`3-move2+9+0` (170 90 51 62)) (`3-move3+13+1` (170 170 48 64)) (`3-move4+9+-2` (170 250 49 60)) (`6-move1+1+3` (250 10 37 61)) (`6-move2+-2+-1` (250 90 42 56)) (`6-move3+-6+0` (250 170 43 58)) (`6-move4+-2+-1` (250 250 40 56)) (`3-attack1+1+2` (330 10 41 72)) (`3-attack2+-1+2` (330 90 43 72)) (`3-attack3+16+2` (330 170 61 55)) (`3-attack4+3+7` (330 250 54 52)) (`3-attack5+3+5` (330 330 54 49)) (`6-attack1+3+3` (410 10 39 67)) (`6-attack2+7+2` (410 90 47 64)) (`6-attack3+-11+1` (410 170 53 58)) (`6-attack4+-9+1` (410 250 57 51)) (`6-attack5+-9+4` (410 330 56 51)) (`3-death1+3+3` (490 10 46 69)) (`3-death2+4+3` (490 90 52 51)) (`3-death3+1+3` (490 170 50 50)) (`3-death4+1+9` (490 250 49 49)) (`6-death1+3+4` (570 10 47 65)))
+anims: | idle (idle0 24)
+       | move (move1 6) (move2 6) (move3 6) (move4 6)
+       | death (death1 4) (death2 4) (death3 4) (death4 4)
+       | attack (attack1 8) (attack2 8) (attack3 4) (attack4 4) (attack5 4)
+       | hit (death1 24)
