@@ -1,0 +1,10 @@
+author: `Natalya Bugrova`,`Alex Kool (kharagh@bk.ru, http://kharagh.deviantart.com/)`
+copyright: `Nikita Sadkov`
+frames: list,((`3-idle0+-4+1` (10 10 46 81)) (`3-idle1+-4+3` (10 110 46 83)) (`3-idle2+-2+3` (10 210 50 83)) (`3-idle3+-2+3` (10 310 50 83)) (`3-idle4+-2+3` (10 410 50 83)) (`6-idle0+1+1` (110 10 36 81)) (`6-idle1+6+2` (110 110 46 82)) (`6-idle2+-2+1` (110 210 39 81)) (`6-idle3+0+1` (110 310 56 81)) (`6-idle4+0+1` (110 410 57 81)) (`3-move1+-2+2` (210 10 50 82)) (`3-move2+-2+1` (210 110 50 81)) (`3-move3+-2+1` (210 210 51 81)) (`3-move4+-2+3` (210 310 50 83)) (`6-move1+1+1` (310 10 54 81)) (`6-move2+-4+1` (310 110 63 81)) (`6-move3+-1+1` (310 210 43 81)) (`6-move4+0+1` (310 310 36 81)) (`3-attack0+-4+1` (410 10 46 81)) (`3-attack1+-5+1` (410 110 44 81)) (`3-attack2+-3+3` (410 210 48 79)) (`3-attack3+-4+4` (410 310 56 83)) (`3-attack4+4+2` (410 410 85 86)) (`6-attack1+8+2` (510 10 46 82)) (`6-attack2+1+5` (510 110 40 81)) (`6-attack3+4+5` (510 210 64 88)) (`6-attack4+41+7` (510 310 164 86)) (`3-death1+-17+1` (610 10 89 80)) (`3-death2+-3+9` (610 110 102 91)) (`3-death3+-34+14` (610 210 75 91)) (`6-death1+9+-2` (710 10 79 78)))
+anims: | idle (idle0 60) (idle1 6) (idle2 6) (idle3 6)
+              (idle4 20) (idle3 6) (idle2 6) (idle1 6)
+       | move (move1 6) (move2 6) (move3 6) (move4 6)
+       | death (death1 8) (death2 8) (death3 24)
+       | attack (attack1 6) (attack2 6) (attack3 6) (attack4 15)
+                (attack3 6) (attack2 6) (attack1 6)
+       | hit (death1 24)
