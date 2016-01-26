@@ -1,0 +1,11 @@
+author: `Matthew Griebner`, `Alexandr Sidorov`,`Ievgen Khomenko`,`Alex Kool (kharagh@bk.ru, http://kharagh.deviantart.com/)`
+copyright: `Nikita Sadkov`
+height: 4
+//xy: 0,56
+//frames: folder
+frames: list,((`3-idle0+5+15` (10 10 146 82)) (`3-idle1+-10+14` (10 170 147 106)) (`3-idle2+-10+14` (10 330 122 105)) (`3-idle3+7+7` (10 490 156 74)) (`3-idle4+-5+20` (10 650 101 84)) (`6-idle0+-13+17` (170 10 164 98)) (`6-idle1+-20+17` (170 170 162 110)) (`6-idle2+-17+18` (170 330 154 111)) (`6-idle3+-13+16` (170 490 151 86)) (`6-idle4+-4+20` (170 650 105 84)) (`3-attack1+-3+27` (330 10 116 97)) (`6-attack1+11+6` (490 10 123 75)) (`3-death1+-27+-8` (650 10 93 101)) (`3-death2+-20+-12` (650 170 103 95)) (`3-death3+-15+-12` (650 330 114 70)) (`3-hit1+-22+7` (970 10 103 88)) (`6-hit1+21+-16` (1130 10 115 102)))
+
+anims: | idle (idle0 4) (idle1 4) (idle2 4) (idle3 4) (idle4 4)
+       | death (death1 6) (death2 6) (death3 6)
+       | attack(attack1 6) (impact 0)  (attack1 6)
+       | hit (hit1 8)

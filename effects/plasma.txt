@@ -1,0 +1,6 @@
+author: `Geni`, `Thane Brimhall`
+license: `CC-BY-SA`
+origin: `http://opengameart.org/content/32x32-and-16x16-rpg-tiles-forest-and-some-interior-tiles`
+xy: 0,24
+frames: folder
+anims: | idle (idle0 3) (idle1 3) (idle2 3) (idle3 3)
