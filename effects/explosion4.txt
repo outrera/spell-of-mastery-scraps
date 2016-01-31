@@ -1,0 +1,7 @@
+author: `Enlight`
+copyright: `Enlight`
+license: `GPL2`
+origin: `7kfans project`
+xy: 0,24
+frames: 64*64
+anims: | idle time-3 0  1  2  3  4  5  6

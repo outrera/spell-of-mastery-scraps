@@ -1,0 +1,11 @@
+author: `Daniel 'Daneeklu' Eddleland`
+copyright: `Daniel 'Daneeklu' Eddleland`
+license: `CC-BY-SA`
+origin: `http://opengameart.org/content/lpc-farming-tilesets-magic-animations-and-ui-elements`
+frames: 128*128
+xy: 4,36
+anims: | idle time-3  3 7 8 9 13 14 15
+
+/*anims: | idle time-4
+               0  1  2  3  4  5  6  7  8  9 
+              10 11 12 13 14 15*/

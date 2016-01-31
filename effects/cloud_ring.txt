@@ -1,0 +1,6 @@
+author: `Brent Anderson (backyardninja@dumbmanex.com)`
+copyright: `Brent Anderson`
+origin: `http://www.dumbmanex.com/bynd_freestuff.html`
+xy: 0,10
+frames: 67*70
+anims: | idle time-3 0  1  2  3  4  5  6

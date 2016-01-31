@@ -1,0 +1,4 @@
+author: `Wesnoth Team`
+license: `GPL2`
+origin: `http://wesnoth.org`
+xy: 0,8
