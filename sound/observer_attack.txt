@@ -1,0 +1,3 @@
+author: `Ambrosia Software`
+license: `CC-BY`
+origin: `http://www.ambrosiasw.com`

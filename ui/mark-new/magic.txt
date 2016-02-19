@@ -1,0 +1,2 @@
+author: `Nethack Team`
+license: GPL2
