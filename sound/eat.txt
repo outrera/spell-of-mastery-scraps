@@ -1,0 +1,3 @@
+author: `Ignas Dauksa 'IgnasD' (http://www.crystalgames.space)`
+license: `CC-BY-SA`
+origin: `http://opengameart.org/content/ice-breakingshattering`
