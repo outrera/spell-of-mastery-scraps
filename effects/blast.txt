@@ -1,0 +1,5 @@
+author: `Caedyn Danow 'Suppercut'`
+license: `Public Domain`
+xy: 0,0
+frames: 64*64
+anims: | idle time-3 0  1  2  3  4  5  6  7
