@@ -1,0 +1,4 @@
+author: `Jorge Avila (http://sumwars.org)`
+license: `CC-BY`
+origin: `http://opengameart.org/users/jorge-avila`
+frames: 16*16
