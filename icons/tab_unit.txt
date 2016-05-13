@@ -1,0 +1,3 @@
+author: `Tempest in the Aether (http://tempestintheaether.org) and Ryzom Core (http://www.ryzomcore.org)`
+license: `CC-BY-SA`
+origin: `http://opengameart.org/content/lpc-interface-items-contribution-by-tempest-in-the-aether`

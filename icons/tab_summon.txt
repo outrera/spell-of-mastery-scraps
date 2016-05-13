@@ -1,0 +1,3 @@
+author: `Jose Ortiz 'MindChamber' (MindChamber.com)`
+license: `CC-BY`
+origin: `http://opengameart.org/content/space-icons-0`

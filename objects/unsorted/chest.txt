@@ -1,0 +1,5 @@
+author: `Heather Lee Harvey (EmeraldActivities.com)`
+license: `CC-BY 3.0`
+origin: `http://opengameart.org/users/emerald`
+height: 4
+xy: 0,8

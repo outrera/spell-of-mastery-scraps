@@ -1,0 +1,8 @@
+author: `Matthew Griebner`, `Aleksandr Zabylov (Shurga) d_shurga@mail.ru`,`Alex Kool (kharagh@bk.ru, http://kharagh.deviantart.com/)`
+copyright: `Nikita Sadkov`
+frames: list,((`3-idle0+6+6` (10 10 62 97)) (`3-idle1+11+6` (10 138 66 95)) (`3-idle2+14+6` (10 266 68 92)) (`6-idle0+-5+8` (138 10 52 96)) (`6-idle1+-9+8` (138 138 56 93)) (`6-idle2+-13+8` (138 266 59 90)) (`3-move1+11+6` (266 10 70 86)) (`3-move2+12+1` (266 138 65 81)) (`3-move3+11+2` (266 266 61 81)) (`3-move4+9+-2` (266 394 65 78)) (`6-move1+-4+5` (394 10 60 85)) (`6-move2+-8+-2` (394 138 63 79)) (`6-move3+-7+0` (394 266 65 80)) (`6-move4+-8+1` (394 394 63 82)) (`3-attack1+15+6` (522 10 48 100)) (`3-attack2+12+2` (522 138 44 95)) (`3-attack3+18+15` (522 266 83 99)) (`3-attack4+-6+10` (522 394 65 78)) (`3-attack5+-6+6` (522 522 68 78)) (`6-attack1+13+6` (650 10 50 85)) (`6-attack2+17+1` (650 138 52 91)) (`6-attack3+-9+4` (650 266 81 75)) (`6-attack4+-16+5` (650 394 67 70)) (`6-attack5+-15+13` (650 522 66 76)) (`3-death1+25+6` (778 10 68 80)) (`3-death2+30+3` (778 138 81 59)) (`3-death3+32+19` (778 266 88 59)) (`3-death4+32+18` (778 394 91 36)) (`3-hit1+7+4` (1034 10 90 88)) (`6-hit1+2+8` (1162 10 60 84)))
+anims: | idle(idle0 9) (idle1 9) (idle2 9) (idle1 9)
+       | move (move1 6) (move2 6) (move3 6) (move4 6)
+       | death (death1 6) (death2 6) (death3 6) (death4 24)
+       | attack (attack1 6) (attack2 6) (impact 0) (attack3 4) (attack4 4) (attack5 4)
+       | hit (hit1 24)

@@ -1,0 +1,6 @@
+author: `TLK Games`, Nikita Sadkov
+license: `GPL3`
+origin: `https://code.google.com/p/hopyone/`
+xy: 0,-16
+frames: 32*32
+anims: | idle time-2 0  1  2  3  4  5  6  7  8  9

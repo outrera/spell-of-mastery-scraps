@@ -1,0 +1,3 @@
+author: `Svenskmand`
+license: `CC-BY-SA`
+origin: `https://code.google.com/archive/p/jadex-agentkeeper/`

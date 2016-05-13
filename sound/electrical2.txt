@@ -1,0 +1,6 @@
+author: `Jose Ortiz 'MindChamber'`
+license: `CC0 (Public Domain)`
+origin: `http://opengameart.org/content/nightstrike-png-assets`
+hit: effect{blood},sound{grunt4}
+death: sound{orbit}
+moves: sound{step}

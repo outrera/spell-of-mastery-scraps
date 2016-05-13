@@ -1,0 +1,3 @@
+author: `Jute`
+license: `GPL2`
+origin: `opengameart.org/content/items-door-fire-weapon-hits`
