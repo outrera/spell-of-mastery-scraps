@@ -1,0 +1,5 @@
+author: `Wildfire Games`
+license: `CC-by-sa`
+origin: `http://www.wildfiregames.com/`
+
+//originally impact-slingimpwood_21.ogg
