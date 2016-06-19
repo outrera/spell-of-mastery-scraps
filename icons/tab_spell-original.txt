@@ -1,0 +1,3 @@
+author: `Der_Wisch`
+license: `Public Domain (CC0)`
+origin: `http://opengameart.org/content/ghoul-hand`
