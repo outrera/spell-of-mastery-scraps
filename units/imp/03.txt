@@ -1,0 +1,9 @@
+author: `Daniil Perlovsky (dancher)`, `Nikita Sadkov`
+copyright: `Nikita Sadkov`
+//xy: 0,32
+frames: folder
+anims: | idle (idle0 6) (idle1 6) (idle2 6) (idle3 6) (idle4 6) 
+       | move (move1 4) (move2 4) (move3 4) (move4 4) (move5 4) (move6 4)
+       | attack (attack1 8) (attack2 6) (attack3 4) (attack4 4) (attack5 8) 
+       | death (death1 4) (death2 4) (death3 4) (death4 4) (death5 24)
+       | hit (death1 24)
