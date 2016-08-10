@@ -1,0 +1,10 @@
+author: `Nikita Sadkov`, `Camilo Collao (Bo)`,`Alex Kool (kharagh@bk.ru, http://kharagh.deviantart.com/)`, `Daniil Perlovsky (dancher)`
+copyright: `Nikita Sadkov`
+//xy: 0,32
+//frames: folder
+frames: list,((`3-idle0+0+2` (10 10 36 69)) (`3-idle1+0+2` (10 110 36 69)) (`3-idle2+0+2` (10 210 38 69)) (`3-idle3+-1+2` (10 310 43 69)) (`3-idle4+-1+2` (10 410 39 69)) (`3-idle5+0+2` (10 510 36 69)) (`6-idle0+0+2` (110 10 38 69)) (`6-idle1+-1+2` (110 110 43 69)) (`6-idle2+-1+2` (110 210 47 69)) (`6-idle3+-1+2` (110 310 45 69)) (`6-idle4+-1+2` (110 410 40 69)) (`6-idle5+0+2` (110 510 38 69)) (`3-move1+-1+1` (210 10 38 68)) (`3-move2+0+5` (210 110 45 70)) (`3-move3+-3+4` (210 210 38 71)) (`3-move4+-4+2` (210 310 43 67)) (`6-move1+-1+5` (310 10 36 73)) (`6-move2+1+9` (310 110 44 75)) (`6-move3+1+2` (310 210 40 70)) (`6-move4+-1+6` (310 310 48 72)) (`3-attack1+0+1` (410 10 40 68)) (`3-attack2+1+-2` (410 110 50 64)) (`3-attack3+5+0` (410 210 56 62)) (`3-attack4+6+-1` (410 310 51 62)) (`6-attack1+1+2` (510 10 36 69)) (`6-attack2+-1+0` (510 110 40 66)) (`6-attack3+-5+2` (510 210 49 66)) (`6-attack4+-6+2` (510 310 47 66)) (`3-death1+-4+2` (610 10 61 58)) (`3-death2+-2+2` (610 110 64 56)) (`3-death3+-3+6` (610 210 67 50)) (`3-death4+-5+5` (610 310 77 69)) (`3-death5+-5+5` (610 410 68 31)) (`3-hit1+-4+2` (810 10 61 58)) (`6-hit1+9+4` (910 10 63 56)))
+anims: | idle (idle0 4) (idle1 4) (idle2 4) (idle3 4) (idle4 4) (idle5 4)
+       | move (move1 6) (move2 6) (move3 6) (move4 6)
+       | death (death1 8) (death2 8) (death3 8) (death4 8) (death5 24)
+       | attack (attack1 6) (attack2 6) (impact 0) (attack3 6) (attack4 10) (attack2 6)
+       | hit (hit1 24)
