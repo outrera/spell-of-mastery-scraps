@@ -1,0 +1,3 @@
+author: `Carl Olsson 'surt'`
+origin: `http://opengameart.org/forumtopic/cc0-scraps`
+height: 4

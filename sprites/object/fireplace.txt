@@ -1,0 +1,6 @@
+author: `Artem Belov`
+copyright: `Nikita Sadkov`
+height: 2
+form: | 4
+      | 4
+xy: 10,8

@@ -1,0 +1,6 @@
+sprite: tiles_room_temple
+cost: wood,1
+embed: soil
+match: same,corner
+deco: 3,(1 1 1),(1 1 1),0,deco_dummy
+1111: 0

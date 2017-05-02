@@ -1,0 +1,6 @@
+proto: room__proto
+icon: room_storage
+affects: (land),tile
+targets: any
+impact: mark{storage},impact{spell},sound{impact}
+tab: build

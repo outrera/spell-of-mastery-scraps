@@ -1,0 +1,5 @@
+sprite: item_food
+item: pickuse,add_item{food,1},sound{pickup},notify{`Found food.`},effect{pickup},remove{self}
+ai: hold
+height: 4
+box_xy: (-1 -1)

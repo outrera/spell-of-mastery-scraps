@@ -1,0 +1,4 @@
+sprite: item_gold
+item: 1
+height: 0
+box_xy: (-1 -1)

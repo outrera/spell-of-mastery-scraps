@@ -1,0 +1,6 @@
+proto: room__proto
+icon: room_relinquish
+affects: any
+targets: any
+impact: mark{relinquish},impact{spell},sound{impact}
+tab: build

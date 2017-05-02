@@ -1,0 +1,4 @@
+author: `Bart Kelsey (http://opengameart.org)` `qubodup`, `Blarumyrran`
+license: `GPL2`
+origin: `http://opengameart.org/content/oga-community-tileset-nature`
+xy: 0,8

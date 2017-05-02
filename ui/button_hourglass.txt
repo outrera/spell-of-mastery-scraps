@@ -1,3 +1,0 @@
-author: `Natalya Bugrova`
-font: none
-frames: folder

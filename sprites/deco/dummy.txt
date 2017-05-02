@@ -1,0 +1,4 @@
+author: `Johannes Sjolund (j.sjolund@gmail.com)`
+license: `CC-BY-SA`
+xy: 0,16
+class: empty,1,height,1,aux,1

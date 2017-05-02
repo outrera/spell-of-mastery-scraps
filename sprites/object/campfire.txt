@@ -1,0 +1,7 @@
+author: `Zabin`,`Jetrel`
+copyright: `Zabin`,`Jetrel`
+license: `CC3-BY-SA`
+origin: `http://opengameart.org/content/camp-fire-animation-for-rpgs-finished`
+frames: 64*64
+anims: | idle time-4 0  1  2  3  4
+class: empty,1,active,1

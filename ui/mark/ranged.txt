@@ -1,4 +1,4 @@
 author: `Jerom`
 license: `CC3-BY-SA`
 origin: `http://opengameart.org/content/16x16-fantasy-tileset`,`http://jerom-bd.blogspot.fr/`
-xy: 0,0
+xy: 0,32

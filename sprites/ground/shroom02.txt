@@ -1,0 +1,3 @@
+author: `Nikita Sadkov`, `Stephen Challener 'Redshrike'`, `Open Surge team (http://opensnc.sourceforge.net)`
+license: `CC-BY`
+origin: `http://opengameart.org/content/32x32-and-16x16-rpg-tiles-forest-and-some-interior-tiles`

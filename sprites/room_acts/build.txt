@@ -1,0 +1,5 @@
+icon: tab_build
+range: 1
+repeat: 1
+affects: any
+impact: build{target}

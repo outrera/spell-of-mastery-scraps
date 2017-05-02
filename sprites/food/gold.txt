@@ -1,0 +1,4 @@
+author: `Clint Bellanger`
+license: `CC-BY-SA`
+origin: `http://opengameart.org/content/gold-treasure-icons`
+xy: 0,6

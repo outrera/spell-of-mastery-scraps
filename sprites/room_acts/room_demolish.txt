@@ -1,0 +1,6 @@
+proto: room__proto
+icon: room_demolish
+affects: any
+targets: any
+impact: mark{demolish},impact{spell},sound{impact}
+tab: build

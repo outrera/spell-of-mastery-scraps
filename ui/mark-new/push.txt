@@ -1,2 +1,2 @@
 author: `Natalya Bugrova`
-xy: 0,0
+xy: 0,32
