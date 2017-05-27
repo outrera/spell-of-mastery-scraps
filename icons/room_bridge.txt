@@ -1,0 +1,5 @@
+author: `Open Dungeons Team`
+license: `CC-BY-SA-3.0`
+origin: `https://github.com/OpenDungeons/OpenDungeons`
+
+//OpenDungeonsIcons.png, OD Team, CC-BY-SA 3.0

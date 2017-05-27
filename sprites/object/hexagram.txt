@@ -1,0 +1,3 @@
+author: `Nikita Sadkov`
+xy: 0,14
+recolors: (#db3a00 #a40000 #7c0000 #5c0400 #440400)

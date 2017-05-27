@@ -1,0 +1,5 @@
+author: `Lorc (http://www.reddit.com/user/Lorc)`
+license: `CC-BY`
+origin: `http://opengameart.org/content/700-rpg-icons`
+
+//OpenDungeonsIcons.png, OD Team, CC-BY-SA 3.0

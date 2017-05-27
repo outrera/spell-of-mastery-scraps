@@ -1,0 +1,17 @@
+title: `Hexagram`
+sprite: special_hexagram
+icon: spell_hexagram
+tier: 2
+combat: 0
+armor: 0
+range: 3
+empty: 1
+health: 10
+pickable: 1
+sight: 1
+starts: still // initial animation
+leader: 2
+ai: turret
+inborn: (upkeep0 enemy_removes)
+
+acts: (cast_fireball)
