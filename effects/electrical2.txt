@@ -1,0 +1,7 @@
+author: `superjoe (Andrew Kelley)`
+copyright: `superjoe (Andrew Kelley)`
+license: `Public Domain`
+origin: `http://opengameart.org/content/electrical-disintegration-animation`
+xy: 0,4
+frames: 63*83
+anims: | idle time-3 0 1 2 3 4 5 6 7 8 9 10

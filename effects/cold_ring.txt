@@ -1,0 +1,5 @@
+author: `Artem Belov`
+copyright: `Nikita Sadkov`
+xy: 0,10
+frames: 52*68
+anims: | idle time-3 0  1  2  3  4  5  6  7  8

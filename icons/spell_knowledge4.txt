@@ -1,0 +1,2 @@
+author: `Natalya Bugrova`
+copyright: `Nikita Sadkov`

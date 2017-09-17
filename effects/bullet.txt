@@ -1,0 +1,3 @@
+author: `Nikita Sadkov`
+copyright: `Nikita Sadkov`
+xy: 0,-16
