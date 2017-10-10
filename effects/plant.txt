@@ -1,0 +1,6 @@
+author: `Nikita Sadkov`
+copyright: `Nikita Sadkov`
+xy: 0,24
+frames: 64*64
+anims: | idle (idle0 3) (idle1 3) (idle2 3) (idle3 3) (idle4 3)
+              (idle3 3) (idle2 3) (idle1 3) (idle0 3)
