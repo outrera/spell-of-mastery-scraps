@@ -1,0 +1,3 @@
+author: `Nikita Sadkov`
+origin: `Spell of Mastery`
+frames: 16*16
