@@ -1,0 +1,9 @@
+author: `Martin Jelinek`, `Jinn`, `Nikita Sadkov`
+origin: `https://github.com/Andrettin/Wyrmsun`
+// taken from Wyrmsun, where it was edited by Jinn out of
+// public domain fire animation by Martin Jelinek
+//(http://opengameart.org/content/fire-fx-burning-fire-animation)
+// I've also resized it and recolored to get brighter colors
+xy: 0,8
+frames: 72*72
+anims: | idle time-2 0  1  2  3  4  5  6  7

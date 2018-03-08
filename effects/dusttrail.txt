@@ -1,0 +1,7 @@
+author: `DkuCook (https://dkucook.artstation.com/)`
+license: `Public Domain (CC0)`
+origin: `https://opengameart.org/content/fx-smoke-trail-pixel`
+xy: 0,0
+frames: folder
+anims: | idle (idle0 3) (idle1 3) (idle2 3) (idle3 3) (idle4 3)
+              (idle5 3) (idle6 3) (idle7 3) (idle8 3) (idle9 3) 

@@ -1,0 +1,7 @@
+author: `Jose Ortiz 'MindChamber'`
+license: `Public Domain (CC0)`
+origin: `http://opengameart.org/content/pink-knight-assets`
+xy: 0,16
+frames: folder
+anims: | idle (idle0 3) (idle1 3) (idle2 3) (idle3 3)
+              (idle4 3) (idle5 3) (idle6 3) (idle7 3)
