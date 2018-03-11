@@ -1,0 +1,9 @@
+author: `Julien Jorge <julien.jorge@stuff-o-matic.com>`
+license: `CC-BY-SA 3.0`
+origin: `https://opengameart.org/content/animated-rabbit-with-a-hat-in-seven-actions`
+xy: -16,16
+//frames: folder
+//anims: | idle (idle0 3) (idle1 3) (idle2 3) (idle3 3)
+//frames: 126*52
+frames: 252*104
+anims: | idle time-4 0  1  2  3
