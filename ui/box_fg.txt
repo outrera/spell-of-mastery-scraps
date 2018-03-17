@@ -1,0 +1,8 @@
+author: Nicu Buculei 'nicubunu'
+license: Public Domain (CC0)
+origin: https://opengameart.org/content/ivy-border
+
+Ivy border, part of my PD-licensed clipart collection.
+
+
+http://clipart.nicubunu.ro/?gallery=borders
