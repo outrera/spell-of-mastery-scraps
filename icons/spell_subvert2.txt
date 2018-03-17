@@ -1,0 +1,3 @@
+author: `inepthuman`
+license: `Public Domain (CC0)`
+origin: `https://opengameart.org/content/zombie-cube-2d`

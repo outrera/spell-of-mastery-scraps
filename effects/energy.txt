@@ -1,0 +1,6 @@
+author: `Brett P. S. 'Division PLUS'`, `Nikita Sadkov`
+license: `CC-BY-SA 3.0`
+origin: `https://opengameart.org/content/dark-sci-fi-backgrounds`
+xy: 0,26
+frames: folder
+anims: | idle (idle0 3) (idle1 3) (idle2 3) (idle3 3)

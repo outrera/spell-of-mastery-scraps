@@ -1,0 +1,3 @@
+author: `Warlock's Gauntlet artists - rAum, jackFlower, DrZoliparia, Neil2D`
+license: `CC-BY`
+origin: `http://opengameart.org/content/spell-icon-collection-part-4`
