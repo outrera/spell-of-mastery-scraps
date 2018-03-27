@@ -1,0 +1,4 @@
+author: `shinzohotoroki`
+copyright: `shinzohotoroki`
+license: `Public Domain`
+origin: `http://opengameart.org/content/heart-3`

@@ -1,0 +1,8 @@
+icon: act_interrupt
+speed: 4
+mov: 0
+check: unit
+needsGene: (charge)
+before: animate{idle},confirm{`Interrupt action?` `Are you sure?`}
+after: when{confirmed},interrupt
+hint: interrupt

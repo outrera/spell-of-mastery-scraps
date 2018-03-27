@@ -1,0 +1,3 @@
+author: `random223 (http://random223.deviantart.com/)`
+license: `CC-BY-SA 3.0`
+origin: `http://opengameart.org/content/colored-ability-icons`
