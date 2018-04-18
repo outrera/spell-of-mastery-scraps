@@ -1,0 +1,10 @@
+author: Nikita Sadkov
+origin: Spell of Mastery
+
+/*
+used following public domain samples:
+https://freesound.org/people/snowflakes/sounds/72189/
+https://freesound.org/people/Qat/sounds/107590/
+https://freesound.org/people/Anthousai/sounds/405665/
+https://freesound.org/people/Anthousai/sounds/405764/
+*/

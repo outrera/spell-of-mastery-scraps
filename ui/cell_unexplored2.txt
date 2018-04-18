@@ -1,0 +1,3 @@
+author: `Michael Bryant-Mode 'Michaelmode'`
+license: `Public Domain (CC0)`
+origin: `https://pixabay.com/en/airplane-clouds-lightning-aircraft-1876266/`

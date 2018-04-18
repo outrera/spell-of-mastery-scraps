@@ -1,0 +1,2 @@
+author: `Nikita Sadkov`
+origin: `Spell of Mastery`

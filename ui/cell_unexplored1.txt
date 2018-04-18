@@ -1,0 +1,3 @@
+author: `Tracy`
+license: `CC-BY`
+origin: `http://opengameart.org/content/cloud-npc`
