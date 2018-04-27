@@ -1,2 +1,0 @@
-author: `Seth Galbraith`,`Nikita Sadkov`
-license: CC-BY-SA
