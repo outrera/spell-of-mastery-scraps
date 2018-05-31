@@ -1,0 +1,3 @@
+author: `5hiroi`, `Nikita Sadkov`
+license: `CC-BY-SA 3.0`
+origin: `https://opengameart.org/content/wyvern-and-girl`

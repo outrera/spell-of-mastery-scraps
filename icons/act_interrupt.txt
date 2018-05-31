@@ -1,0 +1,4 @@
+author: `random223 (http://random223.deviantart.com/)`, `Nikita Sadkov`
+license: `CC-BY-SA 3.0`
+origin: `http://opengameart.org/content/colored-ability-icons`
+//I have edited original icon into stoping hand

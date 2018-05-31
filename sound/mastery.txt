@@ -1,0 +1,3 @@
+author: `Nikita Sadkov`,`Paulius Jurgelevicius 'pauliuw' (http://dustychest.tk/ http://opengameart.org/users/pauliuw)`
+license: `CC-BY-SA 3.0`
+origin: `https://github.com/saniv/free-game-sfx`

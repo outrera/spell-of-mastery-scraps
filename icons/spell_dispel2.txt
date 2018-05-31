@@ -1,0 +1,3 @@
+author: `yinakoSGA (http://www.supergameasset.com)`
+license: `CC-BY 3.0`
+origin: `http://opengameart.org/content/basic-rpg-item-icons-free`

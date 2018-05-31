@@ -1,0 +1,3 @@
+author: `OpenClipart-Vectors`, `Nikita Sadkov`
+license: `Public Domain (CC0)`
+origin: `https://pixabay.com/en/crosshatch-hand-hatch-hatching-2030049/`
