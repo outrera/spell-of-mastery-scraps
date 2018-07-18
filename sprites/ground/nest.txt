@@ -1,4 +1,0 @@
-author: `tutankhamen77@gmail.com`
-origin: `https://code.google.com/p/pocketheroes/`
-license: `Creative Commons 3.0 BY`
-xy: 0,8

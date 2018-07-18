@@ -1,7 +1,0 @@
-icon: room_bridge
-room: 1
-range: 9000
-affects: any
-targets: any
-impact: mark{bridge},impact{spell},sound{impact}
-tab: build

@@ -1,5 +1,0 @@
-author: `Artem Belov`
-form: | 4 4
-      | 4 4
-xy: -4,12
-class: height,1

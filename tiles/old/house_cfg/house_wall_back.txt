@@ -1,0 +1,11 @@
+sprite: tiles_house
+around: house
+aux: 1
+heavy: 1
+opaque: 1
+filler: 0
+height: 2
+lineup: 0
+match: same_side
+role: house_wall
+lay: 5

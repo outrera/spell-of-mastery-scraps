@@ -1,8 +1,0 @@
-author: `Artem Belov`
-copyright: `Nikita Sadkov`
-license: `CC3-BY-SA`
-height: 4
-xy: 0,8
-frames: folder
-anims: | idle time-8 idle0 idle1 idle2 idle3
-class: empty,1,active,1

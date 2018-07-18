@@ -1,0 +1,4 @@
+author: `Artem Belov`
+xy: -2,13
+recolors: (#db3a00 #a40000 #7c0000 #5c0400 #440400)
+class: empty,0,height,2,active,0

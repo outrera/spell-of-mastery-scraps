@@ -1,4 +1,0 @@
-author: `Artem Belov`
-copyright: `Nikita Sadkov`
-class: empty,0,height,1,movable,1
-xy: 0,16

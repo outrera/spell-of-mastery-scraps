@@ -1,4 +1,0 @@
-author: `Tim Jonsson`
-copyright: `Nikita Sadkov`
-xy: -12,12
-class: empty,1,height,0,aux,0

@@ -1,3 +1,0 @@
-author: `Tim Jonsson`
-copyright: `Nikita Sadkov`
-xy: 0,14

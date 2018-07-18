@@ -1,6 +1,0 @@
-author: `Fenrir-Lunaris`
-license: `GPL2`
-origin: `http://rpg.hamsterrepublic.com/ohrrpgce/Game:Vikings_of_Midgard`
-xy: 0,-32
-frames: folder
-anims: | idle (idle0 6) (idle1 5) (idle2 4) (idle3 4) (idle4 4)

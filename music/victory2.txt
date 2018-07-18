@@ -1,0 +1,4 @@
+author: `Kevin MacLeod (incompetech.com)`
+copyright: `Kevin MacLeod`
+license: `CC3-BY`
+comment: `Dark Star`

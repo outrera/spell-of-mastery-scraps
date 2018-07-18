@@ -1,0 +1,4 @@
+author: `The United States Air Force Heritage of America Band`
+license: `Public Domain`
+origin: `http://www.heritageofamericaband.af.mil/recordings/frontiers.asp`
+comment: `Thaxted`

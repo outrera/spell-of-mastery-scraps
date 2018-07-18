@@ -1,0 +1,4 @@
+author: `yd (http://ydstuff.wordpress.com/)`
+license: `Public Domain (CC0)`
+origin: `https://opengameart.org/content/bag-of-coins`
+xy: 0,8

@@ -1,0 +1,18 @@
+sprite: tiles_house
+around: house //this wall goes around house tiles
+dig: 1
+back: house_wall_back
+//wallShift: -18 //precise pixel dimension used for door align
+heavy: 1
+opaque: 1
+filler: 0
+height: 2
+lineup: 0
+match: same_side
+role: house_wall
+lay: | 2 4 1
+     | 5 0 0
+     | 1 3 2
+     | 5 2
+     | 2 2
+     | 2 1 0

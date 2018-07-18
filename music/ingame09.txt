@@ -1,0 +1,3 @@
+author: `Camille Saint-Saens,  Pandora Record, Seattle Youth Symphony / Vilem Sokol`
+license: `EFF OAL`
+origin: `http://www.ibiblio.org/pandora/HOMEPAGE.html`

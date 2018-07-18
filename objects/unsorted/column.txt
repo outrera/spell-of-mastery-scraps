@@ -1,3 +1,0 @@
-author: `Redshrike`
-height: 4
-xy: 0,8

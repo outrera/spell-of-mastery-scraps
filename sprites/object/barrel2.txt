@@ -1,3 +1,0 @@
-author: `Artem Belov`
-copyright: `Nikita Sadkov`
-xy: 0,8

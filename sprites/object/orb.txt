@@ -1,3 +1,0 @@
-author: `Artem Belov`
-xy: 0,8
-class: active,1,height,1

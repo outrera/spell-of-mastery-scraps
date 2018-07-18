@@ -1,3 +1,0 @@
-author: `DeadKir`
-license: `Public Domain`
-origin: `http://opengameart.org/content/pixelart-skills-icons`

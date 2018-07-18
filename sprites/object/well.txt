@@ -1,4 +1,0 @@
-author: `Artem Belov`
-form: | 4 4
-      | 4 4
-xy: 0,0

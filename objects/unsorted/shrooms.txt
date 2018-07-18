@@ -1,3 +1,0 @@
-author: `Mana World Team`
-license: GPL2
-origin: `https://www.themanaworld.org/`
