@@ -1,0 +1,2 @@
+contrast was increased by 5, then saturation increased by 10
+brick highlight color was decreased in brithtness by 15
