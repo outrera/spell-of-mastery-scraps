@@ -1,0 +1,4 @@
+author: `Liz Molnar (https://raventale.itch.io/)`
+license: `Public Domain (CC0)`
+origin: `https://raventale.itch.io/daily-doodles-asset-pack-2`
+xy: 0,8
