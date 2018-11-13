@@ -1,0 +1,6 @@
+author: `janexx (http://www.unknown-horizons.org/)`
+license: `CC-BY-SA 3.0`
+origin: `https://opengameart.org/content/fire`
+xy: 0,16
+frames: 64*128
+anims: | idle time-3 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17 18
