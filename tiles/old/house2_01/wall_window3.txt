@@ -1,0 +1,4 @@
+author: `Tim Jonsson`, `Nikita Sadkov`
+copyright: `Nikita Sadkov`
+xy: 0,12
+frames: 64*64
