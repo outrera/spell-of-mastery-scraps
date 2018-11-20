@@ -1,5 +1,0 @@
-author: `Denzi`
-license: `CC-by-SA 2.1`
-origin: `http://www3.wind.ne.jp/DENZI/diary/`
-height: 4
-xy: 0,14

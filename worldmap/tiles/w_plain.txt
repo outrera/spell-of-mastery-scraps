@@ -1,6 +1,0 @@
-sprite: world_tiles
-trn: 1
-water: w_water,w_plain_water
-clear: 1
-1111: 16
-

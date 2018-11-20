@@ -1,0 +1,3 @@
+author: `Nikita Sadkov`
+origin: `Spell of Mastery`
+//mountains are modified from Jetrel's public domain tileset http://opengameart.org/content/castle-platformer

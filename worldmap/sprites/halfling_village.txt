@@ -1,4 +1,0 @@
-author: `Juriy Bura (http://juriy.com)`
-license: `CC-by-SA 2.1`
-height: 4
-xy: 0,14
