@@ -1,0 +1,3 @@
+author: `Anonymous`
+license: `Public Domain (CC0)`
+origin: `https://github.com/Andrettin/Wyrmsun/`
