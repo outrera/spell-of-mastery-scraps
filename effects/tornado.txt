@@ -1,0 +1,5 @@
+author: `JIMP`
+origin: `http://opengameart.org/content/jimp-package-from-open-bundle`
+xy: 0,32
+frames: 225*280
+anims: | idle time-4 0  1  2  3  4  5  6
