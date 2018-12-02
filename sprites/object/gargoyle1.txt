@@ -1,0 +1,5 @@
+author: `Artem Belov`
+copyright: `Nikita Sadkov`
+xy: -2,8
+frames: folder
+anims: | idle (idle0 6)

@@ -1,0 +1,3 @@
+author: `Nikita Sadkov`
+license: `all rights reserved`
+origin: `Spell of Mastery`
