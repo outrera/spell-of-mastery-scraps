@@ -1,0 +1,4 @@
+author: `Tuomo Untinen 'Reemax' (http://tuomount.kapsi.fi/)`, `Nikita Sadkov`
+license: `Public Domain (CC0)`
+origin: `http://opengameart.org/content/16-bit-gilded-bitmap-font`, `https://opengameart.org/content/16-bit-gilded-bitmap-font-with-lower-cases`
+frames: 13*20

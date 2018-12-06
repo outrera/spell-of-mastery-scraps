@@ -1,0 +1,6 @@
+author: `feudalwars (http://feudalwars.net/)`, Nikita Sadkov
+origin: `https://opengameart.org/content/medieval-blacksmith-isometric-25d`
+class: height,2
+form: | 2 2
+      | 2 2
+xy: 0,10
