@@ -1,0 +1,2 @@
+//dejavusansbold12, taken from stratagus
+frames: 19*16
