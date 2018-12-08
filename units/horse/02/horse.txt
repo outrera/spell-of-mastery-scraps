@@ -1,0 +1,9 @@
+author: `Alex Kool (kharagh@bk.ru, http://kharagh.deviantart.com/)`
+copyright: `Nikita Sadkov`
+xy: 0,32
+frames: folder
+anims: | idle (idle0 9)
+       | death (move3 6)
+       | move (move0 4) (move1 4) (move2 4) (move3 4) (move4 4) (move5 4)
+       | attack (move4 8)
+       | hit (move3 16)

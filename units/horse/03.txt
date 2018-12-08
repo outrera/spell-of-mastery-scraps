@@ -1,0 +1,10 @@
+author: `Alex Kool (kharagh@bk.ru, http://kharagh.deviantart.com/)`
+copyright: `Nikita Sadkov`
+//xy: 0,32
+//frames: folder
+frames: list,((`3-idle0+-2+18` (0 0 81 83)) (`6-idle0+1+20` (119 0 71 93)) (`3-move0+-3+14` (238 0 88 76)) (`3-move1+-3+9` (238 109 86 72)) (`3-move2+-3+-1` (238 218 84 64)) (`3-move3+-4+6` (238 327 83 73)) (`3-move4+-2+13` (238 436 81 78)) (`3-move5+-3+17` (238 545 85 80)) (`6-move0+6+14` (357 0 85 91)) (`6-move1+7+21` (357 109 93 98)) (`6-move2+9+11` (357 218 100 88)) (`6-move3+10+9` (357 327 99 86)) (`6-move4+8+4` (357 436 90 81)) (`6-move5+4+9` (357 545 77 86)))
+anims: | idle (idle0 9)
+       | death (move3 6)
+       | move (move0 4) (move1 4) (move2 4) (move3 4) (move4 4) (move5 4)
+       | attack (move4 8)
+       | hit (move3 16)
