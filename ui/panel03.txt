@@ -1,0 +1,4 @@
+author: `Nikita Sadkov`, `Locomalito (http://www.locomalito.com/)`
+license: GPL3
+
+//the demon heads are a recolors of GPL3 sprites by Locomalito from l'Abbaye des Morts, the rest is by myself
