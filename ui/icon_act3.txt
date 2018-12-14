@@ -1,0 +1,3 @@
+author: `Nikita Sadkov`
+origin: `The Spell of Mastery`
+xy: 0,-1
