@@ -1,0 +1,4 @@
+author: `Nikita Sadkov`
+xy: 22,-44
+frames: 44*44
+anims: | idle time-18 0
