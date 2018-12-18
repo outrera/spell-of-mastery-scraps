@@ -1,0 +1,2 @@
+author: `rgbfumes`
+origin: `Spell of Mastery`

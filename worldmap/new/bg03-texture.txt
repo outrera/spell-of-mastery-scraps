@@ -1,0 +1,3 @@
+author: `stereoscopic`
+license: `Public Domain (CC0)`
+origin: `https://opengameart.org/content/grass-1`

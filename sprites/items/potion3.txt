@@ -1,0 +1,4 @@
+author: `Jose Victor 'JosephSeraph' (http://creative-joseraph.tumblr.com/)`
+license: `CC-BY 3.0`
+origin: `https://opengameart.org/content/js-icon-pack-01`
+xy: 0,6

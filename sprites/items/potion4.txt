@@ -1,0 +1,4 @@
+author: `Liz Molnar (https://raventale.itch.io/)`, `Nikita Sadkov`
+license: `Public Domain (CC0)`
+origin: `https://raventale.itch.io/daily-doodles-pixelart-asset-pack`
+xy: 0,6
