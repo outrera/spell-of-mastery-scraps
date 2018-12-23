@@ -1,0 +1,6 @@
+author: `LetargicDev`
+license: `Public Domain (CC0)`
+origin: `https://opengameart.org/content/portals`
+frames: 32*32
+xy: 0,-3
+anims: | idle time-6 0 1 2 3 4
