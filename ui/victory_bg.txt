@@ -1,0 +1,3 @@
+author: `Alicja Pantera 'Alekei'`
+license: `CC-BY 3.0`
+origin: `http://opengameart.org/content/background-night`

@@ -1,0 +1,4 @@
+author: `HorrorPen`, `Nikita Sadkov`
+license: `CC-BY 3.0`
+origin: `http://opengameart.org/content/random-rpg-icons-part-1`
+//I've retouched it a little --Nikita Sadkov
