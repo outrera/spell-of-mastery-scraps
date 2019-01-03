@@ -1,0 +1,3 @@
+author: `Ironthunder (http://opengameart.org/users/ironthunder)`, `Krzysztof "Ravenmore" (http://dycha.net)`, `yinakoSGA (http://www.supergameasset.com)`, `Nikita Sadkov`, `Natalya Bugrova`
+license: CC-BY-SA
+origin: `http://opengameart.org/content/basic-rpg-item-icons-free`, `http://opengameart.org/content/outdatedarchive-fantasy-icon-pack`

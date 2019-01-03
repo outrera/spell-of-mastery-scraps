@@ -1,0 +1,3 @@
+author: `Nikita Sadkov`, `Sergenious (https://www.freesound.org/people/Sergenious/)`
+license: `CC-BY`
+origin: `Spell of Mastery`
