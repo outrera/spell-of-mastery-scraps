@@ -1,0 +1,7 @@
+author: `Wesnoth Team`
+license: `GPL2`
+origin: `wesnoth.org`
+xy: 0,0
+frames: folder
+anims: | idle (idle0 3) (idle1 3) (idle2 3) (idle3 3)
+              (idle4 3) (idle5 3) (idle6 3) (idle7 3)
