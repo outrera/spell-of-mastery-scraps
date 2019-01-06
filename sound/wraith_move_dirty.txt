@@ -1,0 +1,3 @@
+author: `Tuomo Untinen 'Reemax' (http://tuomount.kapsi.fi/)`
+license: `CC-BY`
+origin: `http://opengameart.org/content/rpg-sound-package`
