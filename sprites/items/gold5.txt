@@ -1,0 +1,4 @@
+author: `Melissa Krautheim 'MELLE'`
+license: `Public Domain (CC0)`
+origin: `https://opengameart.org/content/fantasy-coin-set`
+xy: 0,8
