@@ -1,0 +1,10 @@
+author: `Nikita Sadkov`, `Garrett Wessner 'Gwes'`, `DeadKir`
+origin: `Spell of Mastery`
+
+//Movement boot icon is an edit of CC0 asset by DeadKir:
+//   http://opengameart.org/content/pixelart-skills-icons
+//Sword and bow icons was made by freelance artist Natalia Bugrova
+//Heart and shield icons are edits of CC0 assets by Garrett Wessner (Gwes)
+//   http://opengameart.org/users/gwes
+//Laurels are CC0 asset by Blarumyrran
+//   https://opengameart.org/content/laurels
